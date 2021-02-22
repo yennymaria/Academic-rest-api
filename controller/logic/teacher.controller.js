@@ -58,7 +58,7 @@ exports.updateTeacher = (req, res, next) => {
         email: req.body.email,
         phone: req.body.phone,
         office: req.body.office,
-        department: req.params
+        department_id: req.params
 
     };
     teacherDto.update({ _id: req.body.id }, teacher, (err, data) => {
